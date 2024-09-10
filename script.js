@@ -12,10 +12,10 @@ const countdown = setInterval(() => {
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     // Update HTML elements
-    document.getElementById("days").innerHTML = days + " Day";
-    document.getElementById("hours").innerHTML = hours + " Hr";
-    document.getElementById("minutes").innerHTML = minutes + " Min";
-    document.getElementById("seconds").innerHTML = seconds + " Sec";
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
 
     // When the countdown is over
     if (timeLeft < 0) {
