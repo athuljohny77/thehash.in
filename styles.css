@@ -109,6 +109,116 @@ footer p a:hover {
     color: #4b00ff;
 }
 
+/* Cookie Popup Styling */
+.cookie-popup {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 400px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0s 0.5s;
+    border: 2px solid #b4ff00;
+}
+
+.cookie-popup.show {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.cookie-popup p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.cookie-popup a {
+    color: #b4ff00;
+    text-decoration: underline;
+}
+
+.cookie-popup a:hover {
+    color: #4b00ff;
+}
+
+.cookie-popup button {
+    font-family: 'Fixedsys', monospace;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #b4ff00;
+    border: none;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.cookie-popup button:hover {
+    background-color: #4b00ff;
+}
+
+/* Privacy Policy Container */
+.privacy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.privacy-container h1 {
+    font-family: 'Fixedsys', monospace;
+    font-size: 2.6em;
+    color: #b4ff00;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.privacy-container h2 {
+    font-family: 'Fixedsys', monospace;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #b4ff00;
+}
+
+.privacy-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+.privacy-container ul {
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: disc;
+}
+
+.privacy-container ul li {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+.privacy-container a {
+    color: #b4ff00;
+    text-decoration: underline;
+}
+
+.privacy-container a:hover {
+    color: #4b00ff;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
 
@@ -138,5 +248,31 @@ footer p a:hover {
 
     footer p {
         font-size: 0.7em;
+    }
+
+    .cookie-popup {
+        padding: 15px;
+        width: 320px;
+        font-size: 0.8em;
+    }
+
+    .cookie-popup button {
+        font-size: 1em;
+    }
+
+    .privacy-container h1 {
+        font-size: 2.2em;
+    }
+
+    .privacy-container h2 {
+        font-size: 1.3em;
+    }
+
+    .privacy-container p, .privacy-container ul li {
+        font-size: 0.9em;
+    }
+
+    .privacy-container ul {
+        margin-left: 15px;
     }
 }

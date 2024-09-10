@@ -7,18 +7,30 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://unpkg.com/fixedsys-css/css/fixedsys.css" as="style">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/fixedsys-css/css/fixedsys.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="icon" href="./img/thehash_favicon.png" type="image/png">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BSX02FJKZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5BSX02FJKZ');
+    </script>
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="TheHash - Hashing out the news that matters. Stay tuned for the latest updates on news that truly matters. Launching soon!">
+    <meta name="description" content="TheHash - Get the latest updates on news that truly matters.">
     <meta name="keywords" content="TheHash, news, breaking news, important news, latest news, The Hash">
     <meta name="author" content="TheHash Team">
-    <meta property="og:title" content="TheHash - Hashing out the news that matters">
-    <meta property="og:description" content="TheHash is your go-to source for hashing out the news that matters. Stay tuned!">
+    <meta property="og:title" content="TheHash">
+    <meta property="og:description" content="Get the latest updates on news that truly matters.">
     <meta property="og:image" content="./img/thehash_favicon.png">
     <meta property="og:url" content="https://www.thehash.in">
     <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +43,7 @@
             <img src="./img/TheHash_AltLogo_01.png" alt="TheHash Logo">
         </div>
         <p class="tagline">"Hashing out the news that matters"</p>
-        <p class="coming-soon-text">#ashing soon! Stay tuned.</p>
+        <p class="coming-soon-text">#ashing soon! Live test in:</p>
         <div class="countdown">
             <div class="time" id="days">00</div>
             <div class="time" id="hours">00</div>
@@ -44,15 +56,20 @@
     <footer>
         <div class="footer-content">
             <div class="social-links">
-                <a href="https://x.com/thehash_in" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/thehash.in" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.threads.net/@thehash.in" target="_blank"><i class="fab fa-threads"></i></a>
-                <a href="mailto:contact@thehash.in"><i class="fas fa-envelope"></i></a>
+                <a href="https://x.com/thehash_in" target="_blank" aria-label="Follow us on X"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/thehash.in" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.threads.net/@thehash.in" target="_blank" aria-label="Follow us on Threads"><i class="fab fa-threads"></i></a>
+                <a href="mailto:contact@thehash.in" aria-label="Drop a mail"><i class="fas fa-envelope"></i></a>
             </div>
             <p>&copy; 2024 TheHash. All rights reserved.</p>
             <p>This site is created & maintained by <a href="https://www.athuljohny.in" target="_blank">www.athuljohny.in</a></p>
         </div>
     </footer>
+
+    <div id="cookie-popup" class="cookie-popup">
+        <p>We use cookies to ensure you get the best experience on our website. <a href="./privacy.html" target="_blank">Learn more</a></p>
+        <button id="accept-cookie">Accept</button>
+    </div>
 
     <script src="./script.js"></script>
 </body>

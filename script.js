@@ -24,3 +24,23 @@ const countdown = setInterval(() => {
         document.querySelector(".countdown").style.display = "none";
     }
 }, 1000);
+
+// Check if cookie consent has already been given
+document.addEventListener("DOMContentLoaded", () => {
+    const cookiePopup = document.getElementById('cookie-popup');
+
+    if (!localStorage.getItem('cookieAccepted')) {
+        // Use a small delay to make sure animation is visible
+        setTimeout(() => {
+            cookiePopup.classList.add('show');
+        }, 500); // Delay to ensure the CSS transition starts smoothly
+    }
+
+    // Accept cookies and hide the popup
+    document.getElementById('accept-cookie').addEventListener('click', () => {
+        cookiePopup.classList.remove('show');
+        // Store the consent in localStorage
+        localStorage.setItem('cookieAccepted', 'true');
+    });
+});
+
