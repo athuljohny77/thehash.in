@@ -18,6 +18,16 @@ body {
     color: #ffffff;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: #ff3503;
+  }
+  
+  ::selection {
+    color: black;
+    background: #ff3503;
+  }
+
 /* Coming Soon Container */
 .coming-soon-container {
     text-align: center;
@@ -57,8 +67,8 @@ body {
 
 .time {
     font-family: 'Fixedsys', monospace;
-    font-size: 2.6em;
-    background-color: #b4ff00;
+    font-size: 5em;
+    background-color: #ff3503;
     color: #000000;
     padding: 40px;
     border-radius: 10px;
@@ -69,10 +79,10 @@ body {
 /* Footer Section */
 footer {
     width: 100%;
-    background-color: #b4ff00;
+    background-color: #4b00ff;
     padding: 20px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     position: relative;
     bottom: 0;
 }
@@ -83,14 +93,14 @@ footer {
 }
 
 .social-links a {
-    color: #000000;
+    color: #ffffff;
     margin: 0 10px;
     font-size: 1.5em;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #4b00ff;
+    color: #b4ff00;
 }
 
 footer p {
@@ -101,12 +111,12 @@ footer p {
 }
 
 footer p a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
 footer p a:hover {
-    color: #4b00ff;
+    color: #b4ff00;
 }
 
 /* Cookie Popup Styling */
@@ -236,7 +246,7 @@ footer p a:hover {
     }
 
     .time {
-        font-size: 2em;
+        font-size: 3em;
         width: 150px;
         padding: 10px;
     }
